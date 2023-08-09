@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fingerprint Reconstruction</title>
+</head>
+<body>
+    <h1>Fingerprint Reconstruction</h1>
+    <form method="POST" enctype="multipart/form-data" action="/">
+        <input type="file" name="image">
+        <input type="submit" value="Upload and Reconstruct">
+    </form>
+    
+    {% if original_image %}
+    <h2>Original Image</h2>
+    <img src="{{ original_image }}" alt="Original Fingerprint">
+    {% endif %}
+    
+    {% if reconstructed_image %}
+    <h2>Reconstructed Image</h2>
+    <img src="{{ reconstructed_image }}" alt="Reconstructed Fingerprint">
+    {% endif %}
+</body>
+</html>
