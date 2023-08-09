@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'fingerprint-reconstructor'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_1D3310D238B343A8B77E01CAE2E379AE }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_524CC425E61E42CE8B57F7F4C44F518C }}
